@@ -4,17 +4,26 @@ import Linkedin from '../Assets/linkedin.svg'
 
 const Navbar = () => {
     return (
-        <div >
-            <nav className='Navbar'>
-                <div>
+        <div className='nav_container'>
+            <nav className='links'>
+                <div className='logo_link'>
                     <h3>Igbalaye Olajide<span>.</span></h3>
                 </div>
-                <ul className='nav_link'>
-                    <li><a href="{}">About Me</a></li>
-                    <li><a href="{}">Services</a></li>
-                    <li><a href="{}">Projects</a></li>
-                    <li><a href="{}">Contact Me</a></li>
-                </ul>
+                <div className='links-wrapper'>
+                    <p>
+                        <a href="#About">About Me</a>
+                    </p>
+                    <p>
+                        <a href="#Skills">Skills</a>
+                    </p>
+                    <p>
+                        <a href="#Services">Services</a>
+                    </p>
+
+                    <p>
+                        <a href="#Contact">Contact Me</a>
+                    </p>
+                </div>
                 <div className='social'>
                     <img src={Linkedin} alt="linkedin" />
                     <img src={Twitter} alt="twitter" />
