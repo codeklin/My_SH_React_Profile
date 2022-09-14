@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/My_SH_React_Profile/static/css/main.6c2808fb.css",
+    "main.js": "/My_SH_React_Profile/static/js/main.4dca69b8.js",
+    "static/media/jide.png": "/My_SH_React_Profile/static/media/jide.e1e8410f8b00f17357ad.png",
+    "static/media/wordpress.svg": "/My_SH_React_Profile/static/media/wordpress.5b4f3dcac61212a2ae01eb36e7e2287e.svg",
+    "static/media/phone.svg": "/My_SH_React_Profile/static/media/phone.11274b36607bfb26be23d3d2afa158f1.svg",
+    "static/media/react.svg": "/My_SH_React_Profile/static/media/react.d1e7e21857811be62a03da38cabd3970.svg",
+    "static/media/email.svg": "/My_SH_React_Profile/static/media/email.e6b132b01f49d4f6748296c34456b4a9.svg",
+    "static/media/twitter.svg": "/My_SH_React_Profile/static/media/twitter.9904b5db9ee8d2e3a6e8e1d673d859ce.svg",
+    "static/media/js.svg": "/My_SH_React_Profile/static/media/js.b9e5cdd7e2d7609fa3081cd325b4409e.svg",
+    "static/media/linkedin.svg": "/My_SH_React_Profile/static/media/linkedin.9eafbd429f942074a6c3d1c052233eb7.svg",
+    "index.html": "/My_SH_React_Profile/index.html",
+    "static/media/html.svg": "/My_SH_React_Profile/static/media/html.e185bfe7a281a2facb40c8d5913af49a.svg",
+    "static/media/windows.svg": "/My_SH_React_Profile/static/media/windows.afb709c5ae7e53765c73183cf1f700bc.svg",
+    "main.6c2808fb.css.map": "/My_SH_React_Profile/static/css/main.6c2808fb.css.map",
+    "main.4dca69b8.js.map": "/My_SH_React_Profile/static/js/main.4dca69b8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6c2808fb.css",
+    "static/js/main.4dca69b8.js"
+  ]
+}
