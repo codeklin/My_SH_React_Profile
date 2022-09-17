@@ -36,8 +36,6 @@ h1 {
 
 }
 
-
-
 .container {
   width: 100%;
   margin-top: 3rem;
@@ -49,38 +47,124 @@ h1 {
 
 /*=================NAVBAR SECTION ====================================*/
 
-.Navbar {
-  display: grid;
-  grid-template-columns: 20% 60% 20%;
-  margin: 1rem;
-
+.nav_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.Navbar .social {
+.links {
+  flex: 1;
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   gap: 1rem;
 
 }
 
-.Navbar h3 {
-  margin-left: 5rem;
+.logo_link h3 {
+  margin-left: 3rem;
+
 }
 
-.Navbar span {
+.nav_container span {
   color: #2351DC;
 
 }
 
-.nav_link {
+.links-wrapper {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   gap: 2rem;
 
-  justify-content: center;
 }
 
+.nav_container .links .links-wrapper p,
+a {
+  font-weight: bold;
+  font-size: 1rem;
+}
 
+.nav-btn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 26%;
 
+}
+
+.nav-btn button {
+  background: #3aafa9;
+  color: #F6F8FE;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+
+}
+
+.links-wrapper p a,
+.nav-btn p {
+  font-weight: 400;
+}
+
+.nav_container .social {
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.nav-menu {
+  margin: 0 0.5rem;
+  display: none;
+  position: relative;
+
+}
+
+.nav-menu a {
+  color: #ddd;
+  line-height: 25px;
+
+}
+
+/*=====NAv Menu Toggle==========*/
+.nav-menu-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  text-align: center;
+  background: #17252a;
+  padding: 2rem;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  margin-top: 1rem;
+  min-width: 150px;
+  border-radius: 5px;
+  box-shadow: 0 0 0 5 rgba(0, 0, 0, 0.2);
+}
+
+.nav-menu-wrapper p a {
+  margin: 1rem 0;
+  text-decoration: none;
+}
+
+.nav-menu-wrapper-button {
+  display: none;
+
+}
+
+.nav-menu-wrapper-button button {
+  background: #3aafa9;
+  color: #F6F8FE;
+  margin-bottom: -1rem;
+  cursor: pointer;
+  width: 100%;
+}
 
 /*=================HERO SECTION====================================*/
 
@@ -95,6 +179,7 @@ h1 {
   display: flex;
   gap: 1rem;
   margin-top: 1rem;
+  cursor: pointer;
 }
 
 .Hero .left_hero {
@@ -138,8 +223,7 @@ h1 {
   align-items: center;
   margin: 4rem;
   text-align: center;
-
-  padding: 6rem 20rem;
+  padding: 6rem 5rem;
   font-size: 1.25rem;
   background: #F6F8FE;
   margin: 0 0;
@@ -158,6 +242,7 @@ h1 {
 .about_side .social {
   display: flex;
   gap: 2rem;
+  cursor: pointer;
 }
 
 
@@ -270,7 +355,7 @@ h1 {
 /*=================MY SERVICES SECTION====================================*/
 
 .services {
-  margin-left: 7rem;
+
   background: #F6F8FE;
   margin-left: 0;
   padding: 3rem 2rem 5rem 7rem;
@@ -280,11 +365,15 @@ h1 {
 .services_container {
   margin-top: 2rem;
   margin-right: 5rem;
-
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
 
+}
+
+.services_container h4,
+p {
+  margin-top: 0.8rem;
 }
 
 /*=================CONTACT SECTION====================================*/
@@ -309,6 +398,7 @@ h1 {
   display: flex;
   gap: 1rem;
   padding-top: 1rem;
+  cursor: pointer;
 }
 
 
@@ -384,6 +474,10 @@ Button {
   color: #F6F8FE;
 }
 
+.form button {
+  cursor: pointer;
+}
+
 /*=================FOOTER SECTION====================================*/
 
 .footer {
@@ -431,20 +525,120 @@ Button {
 .footer .social {
   display: flex;
   gap: 1rem;
+  cursor: pointer;
 
 }
 
-/*.footer .social img .link {
-  color: #F6F8FE;
-  background: #D3DCF8;
-}*/
-
-.footer small {
-  color: #F6F8FE;
+.footer_small small {
+  color: #ddd;
 }
-
 
 /*=================MEDIA QUERIES====================================*/
+@media screen and (max-width: 1050px) {
+  .links-wrapper {
+    display: none;
+  }
+
+  .nav-menu {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .nav-btn button {
+    background: #3aafa9;
+    color: #F6F8FE;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    width: 51%;
+  }
+
+  .right .form button {
+    width: 60%;
+    cursor: pointer;
+    margin-bottom: 2rem;
+
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .nav-btn button {
+    background: #3aafa9;
+    color: #F6F8FE;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    width: 61%;
+  }
+
+  .right .form button {
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 2rem;
+
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .nav-btn button {
+    background: #3aafa9;
+    color: #F6F8FE;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    width: 71%;
+  }
+
+  .right .form button {
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 2rem;
+
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    padding: 2rem 4rem;
+  }
+
+  .right .form button {
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 2rem;
+
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    padding: 2rem 4rem;
+  }
+
+  .nav-btn {
+    display: none;
+  }
+
+  .nav-menu-wrapper {
+    top: 20px;
+  }
+
+  .nav-menu-wrapper-button {
+    display: block;
+  }
+
+  .right .form button {
+    width: 50%;
+    cursor: pointer;
+
+  }
+}
+
+
+
+
+
+
+
+
 @media screen and (max-width: 1024px) {
 
   .app {
@@ -670,6 +864,12 @@ Button {
     .Eform p {
       font-size: 0.8rem;
       color: #F6F8FE;
+    }
+
+    .right .form button {
+      width: 50%;
+      cursor: pointer;
+
     }
 
     /*=======FOOTER==========*/
