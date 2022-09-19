@@ -73,7 +73,7 @@ const Navbar = () => {
                             <div className='nav-menu-wrapper-links'>
                                 <Menu />
                                 <div className='nav-menu-wrapper-button'>
-                                    <button type='button'>Hire Me</button>
+                                    <button as='a' href='https://twitter.com/jidelence' type='button'>Hire Me</button>
                                 </div>
                             </div>
                         </div>
